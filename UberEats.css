@@ -724,7 +724,6 @@ body{
     animation-duration: 400ms;
     display: flex;
     color: black;
-    width: ;
 }
 .enterdelivery2{
     background-color: black;
@@ -775,6 +774,10 @@ body{
     width: 100%;
     height: 160px;
 }
+.spacedivcity{
+    width: 100%;
+    height: 80px;
+}
 @media (max-width:1023px){
     .login{
         display: none;
@@ -785,8 +788,24 @@ body{
     .spacedivcountry{
         display: none;
     }
+    #cityheader p{
+        display: none;
+    }
+    .list-sub{
+        display: none;
+    }
+    .spacedivcity{
+        display: none;
+    }
+    .spacedivcountry{
+        display: none;
+    }
+    .hiddenfooter{
+        display: none;
+    }
 }
 @media (min-width:1024px){
+    
     .home{
         width: 100vw;
         height: 100vh;
@@ -799,11 +818,14 @@ body{
         justify-items: center;
         align-items: center;
         min-height: 0;
+        justify-content: center;
+        align-content: center;
     }
     .nav{
         margin:0 15px;
         padding: 0px 40px;
         margin-top: 8px;
+        position: absolute;
     }
     .profile{
         display: none;
@@ -844,16 +866,17 @@ body{
     }
     .order{
         padding: 0 40px;
-        -webkit-text-size-adjust: 100%;
         display: block;
         min-width: 1024px;
         max-width: 1920px;
         margin: 0 auto;
         width: 100%;
         box-sizing: border-box;
+        height: 200px;
     }
     .wholeorder{
-        margin-top: 130px;
+        margin:  0 auto;
+        
     }
     .orderhere{
         display: flex;
@@ -943,8 +966,149 @@ body{
     .spacediv{
         height: 65px;
     }
-    .
-    .main{
+    .cities h2{
+        font-size: 36px;
+        line-height: 40px;
+    }
+    #cityheader{
+        display: flex;
+        justify-content: space-between;
+    }
+    #cityheader p{
+        line-height: 20px;
+        font-weight: 500;
+        text-decoration: underline;
+        font-size: 16px;
+        font-family: "UberMoveText2";
+    }
+    .countries h2{
+        font-size: 36px;
+        line-height: 40px;
+    }
+    #countryheader{
+        display: flex;
+        justify-content: space-between;
+    }
+    #countryheader p{
+        line-height: 20px;
+        font-weight: 500;
+        text-decoration: underline;
+        font-size: 16px;
+        font-family: "UberMoveText2";
+    }
+    .view{
+        display: none;
+    }
+    .cities{
+        padding: 0 40px;
+        margin: 0px;
+    }
+    .citymap{
+        background: url(img/cities2.png);
+        margin-top: 14px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 363px;
+    }
+    .citylist{
+        margin-top: 24px;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(6,1fr);
+        gap: 24px;
+        grid-auto-flow: column;
+        display: grid;
+        font-family: "UberMoveText";
+    }
+    .countries{
+        padding: 0 40px;
+        margin: 0px;
+    }
+    .countrylist{
+        margin-top: 24px;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(8,1fr);
+        gap: 24px 8px;
+        grid-auto-flow: column;
+        display: grid;
+        font-family: "UberMoveText";
+    }
+    .foot{
+        margin: 80px 0 0;
+        padding: 72px 0 80px;
         
     }
+    .firstmain{
+        display: flex;
+        padding: 0px 40px;
+        flex: 2;
+        align-content: space-between;
+        max-width: 1200px;
+        margin: auto;
+    }
+    #footerimg{
+        margin-bottom: 48px;
+        height: 24px;
+        width: 134px;
+        filter: unset;
+        aspect-ratio: auto;
+    }
+    .firstmain1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 2;
+        align-items: flex-start;
+
+    }
+    .additionals{
+        margin-right: 50px;
+    }
+    .specialities{
+        flex: 1;
+    }
+    .appstongoogl{
+        height: 44px;
+        align-self: flex-end;
+        margin-bottom: -100px;
+    }
+    #border{
+        margin-bottom: 40px;
+        margin-top: 20px; 
+    }
+    .smallfooter{
+        display: none;
+    }
+    .hiddenfooter{
+        padding: 0px 40px;
+        max-width: 1200px;
+        margin: auto;
+    }
+    .lastspace{
+        flex: 1 0 36px;
+    }
+    .firsthide2{
+        display: flex;
+        gap: 40px;
+    }
+    .firsthide{
+        display: flex;
+    }
+    .secondhidden{
+        display: flex;
+        gap: 40px;
+        margin-top: -20px;
+    }
+    .spaceomega{
+        flex: 1 0 36px
+    }
 }   
+@media (min-width:1500px){
+    .nav{
+        margin: auto;
+        max-width: 1920px;
+    }
+    .wholeorder{
+        
+    }
+}
