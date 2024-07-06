@@ -1,0 +1,950 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "UberMoveText";
+}
+@font-face{
+    font-family:"UberMove";
+    src: url(font/14f73a3f74611002.woff2);
+}
+@font-face{
+    font-family:"UberMoveText";
+    src:url(font/276edd4275dda838.woff2);
+}
+@font-face{
+    font-family: "UberMoveText2";
+    src: url(font/eee1724e2e5a8ebd.woff2);
+}
+@font-face{
+    font-family: "UberMove2";
+    src: url(font/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2);
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background: url(img/home.webp);
+    min-height: 802px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    justify-items: center;
+    align-items: center;
+}
+.nav{
+    display: flex;
+    margin:0 16px;
+    align-items: center;
+    height: 48px;
+    justify-content: flex-start;
+    padding: 0 16px;
+    align-items: center;
+    right: 0;
+    top: 0;
+    left: 0;
+    flex-direction: row;
+    
+}
+.menunuber{
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    margin-top: 4px;
+}
+.menu img{
+    width: 20px;
+}
+.menu{
+    margin-left: -14px;
+}
+.ubereats img{
+    height: 16px;
+}
+.autospace{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+}
+.profilensign{
+    display: flex;
+    gap: 12px;
+}
+.profile{
+    border: solid none;
+    border-radius: 20px;
+    background: white;
+    width:36px;
+    height: 36px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.04);
+}
+.profile img{
+    width: 16px;
+    padding: 10px;
+}
+.sign{
+    border: solid none;
+    border-radius: 20px;
+    background: rgb(0, 0, 0);
+    height: 36px;
+    width: 73.69px;
+    margin-right: -16px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.04);
+}
+.sign p{
+   padding: 8px 12px;
+   line-height: 16px;
+   font-weight: 500;
+   font-size: 14px;
+   color: #FFFFFF;
+   margin-top: 2px;
+   font-family: "UberMoveText2";
+}
+.wholeorder{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.order{
+    margin-top: 56px;
+    padding: 0 16px;
+    -webkit-text-size-adjust: 100%;
+    display: block;
+    unicode-bidi: isolate;
+}
+.order h2{
+    font-size: 36px;
+    font-family: "UberMove";
+    line-height: 44px;
+    line-height: 44px;
+    -webkit-font-smoothing: antialiased;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    font-weight: 700;
+    display: block;
+    word-spacing: -0.2px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.space{
+    width: 10px;
+}
+.address{
+    display: flex;
+    align-items: center;
+    background: white;
+    border: solid none;
+    height:56px;
+    margin-top: 32px;
+    margin-bottom: 8px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    box-shadow: inset 0px -1px 0px #F3F3F3;
+}
+.address1{
+    z-index: 3;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: block;
+    unicode-bidi: isolate;
+    background-color: white;
+}
+.address2{
+    box-shadow: rgb(243, 243, 243) 0px 0px 10px;
+    padding: 8px 16px;
+    display: block;   
+}
+.address3{
+    background-color: #F3F3F3;
+    position: sticky;
+    padding-left: 4px;
+    box-shadow: inset 0px -1px 0px #F3F3F3;
+    height: 56px;
+    top: 0;
+    unicode-bidi: isolate; 
+    display: flex;
+}
+.address3 img{
+    padding-top: 4px;
+    margin: 12px;
+    height: 24px;
+    width: 24px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.addressarea1{
+    color: #4b4b4b;
+    line-height: 24px;
+    font-weight: normal;
+    font-size: 16px;
+    font-family: "UberMoveText";
+    display: block;
+}
+.invisible{
+    display: none;
+}
+.visible{
+    display: block;
+}
+.location{
+    justify-self: flex-start;
+    margin-left: 16px;
+    margin-top: 4px;
+}
+.addressarea{
+    margin-left: 12px;
+    margin-top: -2px;
+    font-size: 16px;
+    color: rgb(82, 81, 81);
+    font-family: "UberMoveText";
+}
+.delivertime{
+    display: flex;
+    align-items: center;
+    background: white;
+    border: solid none;
+    height: 56px;
+    margin: 0;
+    justify-content: space-between;
+    box-shadow: inset 0px -1px 0px #F3F3F3;
+}
+.clockndel{
+    display: flex;
+    align-items: center;
+}
+.clock{
+    justify-self: flex-start;
+    margin-left: 16px;
+    margin-top: 4px;
+}
+.delivernow{
+    margin-left: 12px;
+    margin-top: -2px;
+    font-size: 16px;
+    font-family: "UberMoveText2";
+    font-weight: 500;
+}
+.arrow{
+    margin: 12px;
+    padding-top: 3px;
+}
+.blacksearch{
+    margin-top: 16px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    height: 56px;
+    align-content: center;
+    justify-content: center;
+    display: grid;
+    border-radius: 8px;
+}
+.blacksearch p{
+    font-size: 18px;
+    font-family: "UberMoveText2";
+    font-weight: 500;
+    padding-bottom: 1px;
+}
+.last{
+    display: flex;
+    align-items: center;
+    font-family: "UberMoveText2";
+    font-size: 14px;
+    font-weight: 500;
+    gap: 3px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.last a{
+    text-decoration: underline;
+}
+.spacediv{
+    width: 100%;
+    height: 32px;
+}
+.main{
+    width: 100%;
+    padding: 16px 0 0 0;
+    display: block;
+    unicode-bidi: isolate;
+}
+.uberouter{
+    margin: 0 16px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    unicode-bidi: isolate;
+}
+.uberapp{
+    display: flex;
+    flex-direction: column;
+    unicode-bidi: isolate;
+}
+.applogonexp{
+    margin-bottom: 16px;
+    align-items: center;
+    display: flex;
+    unicode-bidi: isolate;
+    max-height: 84px;
+}
+.applogonexp img{
+    border-radius: 15%;
+    height: 64px;
+    width: 64px;
+    flex-shrink: 0px;
+}
+.applogonexp p{
+    line-height: 28px;
+    font-size: 24px;
+    font-family: "UberMove";
+    font-weight: 700;
+    margin: 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+
+}
+.spacerA{
+    width:33.5px;
+    height: 1px;
+}
+.spacerB{
+    width: 8px;
+    height: 1px;
+}
+.getapp{
+    background: #f3f3f3;
+    border-radius: 8px;
+    padding: 12px 16px;
+    height: 56px;
+    font-size: 18px;
+    font-weight: 500;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+   
+}
+.getappin{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    unicode-bidi: isolate;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    font-family: "UberMoveText2";
+    text-rendering: auto;
+    text-transform: none;
+    text-indent: 0px;
+    text-align: center;
+}
+.getappin img{
+    width: 18px;
+}
+.spacediv2{
+    height: 48px;
+    width: 100%;
+}
+.advantage{
+    margin: 0 16px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+}
+.advantage div{
+    position: relative;
+    margin-top: 0px;
+}
+.advantage div img{
+    margin: 0px 0px 4px;
+    height: auto;
+    width: 100%;
+    aspect-ratio: auto 343/191;
+}
+.advantage div p{
+    line-height: 32px;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0px;
+    font-family: "UberMove";
+    letter-spacing: -0.02px;
+}
+.advantage div a{
+    display: block;
+    text-decoration: underline;
+    margin-top: 8px;
+    line-height: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: "UberMoveText2";
+}
+.spacediv3{
+    height: 36px;
+    width: 100%;
+}
+.cities{
+    margin: 0 16px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    unicode-bidi: isolate;
+    font-family: "UberMoveText";
+}
+.cities h2{
+    line-height: 32px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "UberMove";
+    margin: 0;
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+.wrapper{
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.citymap{
+    margin-top: 14px;
+    background: url(img/citymap.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 363px;
+}
+.citylist{
+    margin-top: 15px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(6,1fr);
+    gap: 16px 8px;
+    grid-auto-flow: column;
+    display: grid;
+    font-family: "UberMoveText";
+}
+.citylist .list{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    display: block;
+}
+.spacediv4{
+    height: 24px;
+    width: 100%;
+}
+.view{
+    line-height: 20px;
+    font-weight: 500;
+    text-decoration: underline;
+    font-size: 16px;
+    font-family: "UberMoveText2";
+}
+.countries{
+    margin: 0 16px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    unicode-bidi: isolate;
+    font-family: "UberMoveText";
+}
+.countries h2{
+    line-height: 32px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "UberMove";
+    margin: 0;
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+.countrylist{
+    margin-top: 24px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(15,1fr);
+    gap: 24px 8px;
+    grid-auto-flow: column;
+    display: grid;
+    font-family: "UberMoveText";
+}
+.countrylist .list{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    display: block;
+}
+.foot{
+    border-top: 1px solid;
+    border-color: #F3F3F3;
+    margin-top: 64px;
+    display: block; 
+    padding: 64px 16px 80px;
+}
+#footerimg{
+    margin-bottom: 48px;
+    height: 24px;
+    width: auto;
+    filter: unset;
+    aspect-ratio: auto 146/24;
+}
+.appleandro{
+    margin-bottom: 68px;
+    display: block; 
+}
+.appstongoogl{
+    gap: 16px;
+    display: flex;
+    flex-flow: row wrap;
+}
+.appstongoogl img{
+    height: 40px;
+    width: auto;
+    aspect-ratio: auto 134 / 40;
+}
+.additionals{
+    margin: 0 0 48px;
+    display: flex;
+    flex-direction: column; 
+}
+.additionals p{
+    line-height: 24px;
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+.specialities{
+    margin: 0 0 64px;
+    display: flex;
+    flex-direction: column; 
+}
+.specialities >*{
+    margin-top: 0;
+    margin-bottom: 16px;
+    line-height: 24px;
+    font-size: 16px;
+    align-items: center;
+}
+#specimg{
+    margin-bottom: 0px;
+    line-height: 24px;
+    font-weight: normal;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+#specimg img{
+    width: 16px;
+    height: 16px;
+}
+.smallspace{
+    height: 1px;
+    width: 8px;
+}
+#border{
+    background-color: #f3f3f3;
+    margin: 40px 0;
+    height: 1px;
+    border: none;
+}
+.socialmedias{
+    margin-bottom: 44px;
+    display: flex;
+    flex-direction: row;
+}
+.mediadiv{
+    display: flex; 
+}
+#socialmediaelem{
+    width: 16px;
+    height: 16px;
+}
+.mediaspacer{
+    height: 1px;
+    width: 24px;
+}
+.lastfooter{
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+}
+.elems{
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 16px;
+    font-weight: normal;
+    display: flex;
+}
+.navdel{
+    background-color: white;
+    border-bottom-color: rgb(243,243,243);
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(245, 241, 241);
+    width: 100%;
+    display: block; 
+    top:0;
+    z-index: 3;
+    width: 100%;
+    left: 0;
+    position: fixed;
+    height: 64px;
+    align-items: center;
+    justify-content: center;
+}
+.navdel2{
+    padding-left: 40px;
+    padding-right: 40px;
+    min-width: 1024px;
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 64px;
+    align-items: center;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;   
+    justify-content: center;
+}
+.menu1{
+    margin-left: -14px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0%;
+    display: block;
+    margin-top: 27px;
+}
+.menu2{
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.menu2 img{
+    height: 20px;
+    width: 20px;
+}
+.mainIcon{
+    margin-top: 23px;
+    margin-right: 28px;
+    margin-left: 8px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    display: block;
+}
+.mainIcon2{
+    margin-top: -20px;
+}
+.mainIcon2 img{
+    display: block;
+    height: 16px;
+    width: auto;   
+}
+.largespace{
+    min-width: 250px;
+    align-self: flex-start;
+    flex: 1 1 auto;
+    width: 100%;
+}
+.logndsign{
+    margin-top: 23px;
+    flex-grow: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.logndsign2{
+    margin-bottom: 24px;
+    display: flex;   
+}
+.logatag{
+    margin-right: 16px;
+    height: 36px;
+    background: white;
+    padding: 12px;
+    border-radius: 500px;
+    justify-content: center;
+    display: inline-flex;
+    line-height: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    white-space: nowrap;
+    align-items: center;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "UberMoveText2";
+}
+.signatag{
+    background: black;
+    height: 36px;
+    padding: 12px;
+    border-radius: 500px;
+    justify-content: center;
+    display: inline-flex;
+    line-height: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+    align-items: center;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "UberMoveText2";
+}
+.betweenspacendelivery{
+    animation-fill-mode: forwards;
+    animation-duration: 400ms;
+    animation-name: ae;
+    flex: 0 1 auto;
+    overflow: hidden;
+    display: flex;
+    color: black;
+}
+.enterdelivery{
+    animation-name: af;
+    flex-grow:1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    animation-fill-mode: forwards;
+    animation-duration: 400ms;
+    display: flex;
+    color: black;
+    width: ;
+}
+.enterdelivery2{
+    background-color: black;
+    border-radius: 36px;
+    gap: 4px;
+    align-self: center;
+    padding-right: 16px;
+    padding-left: 16px;
+    height: 36px;
+    line-height: 16px;
+    font-weight: 16px;
+    font-size: 14px;
+    color: white;
+    white-space: nowrap;
+    font-family: "UberMoveText2";
+    align-items: center;
+    display: flex;
+    
+}
+.whitelocation{
+    width: 20px;
+    height: 20px;
+}
+.whitearrow{
+    width: 16px;
+    height: 16px;
+
+}
+.invi{
+    display: none;
+}
+.visi{
+    display: block;
+}
+.in{
+    display: none;
+}
+.vi{
+    display: block;
+}
+.i{
+    display: none;
+}
+.v{
+    display: block;
+}
+.spacedivcountry{
+    width: 100%;
+    height: 160px;
+}
+@media (max-width:1023px){
+    .login{
+        display: none;
+    }
+    .navdel{
+        display: none;
+    }
+    .spacedivcountry{
+        display: none;
+    }
+}
+@media (min-width:1024px){
+    .home{
+        width: 100vw;
+        height: 100vh;
+        background: url(img/homedesk.webp);
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        justify-items: center;
+        align-items: center;
+        min-height: 0;
+    }
+    .nav{
+        margin:0 15px;
+        padding: 0px 40px;
+        margin-top: 8px;
+    }
+    .profile{
+        display: none;
+    }
+    .menu{
+        margin-left: -15px;
+        margin-right: 4px;
+    }
+    .login{
+        border: solid none;
+        border-radius: 20px;
+        background: rgb(255, 255, 255);
+        height: 36px;
+        width: 63.86px;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.04);
+        margin-right: 4px;
+    }
+    .login p{
+       padding: 8px 12px;
+       line-height: 16px;
+       font-weight: 500;
+       font-size: 14px;
+       color: #000000;
+       margin-top: 2px;
+       font-family: "UberMoveText2";
+    }
+    .sign{
+        margin-right: -15px;
+    }
+    .order h2{
+        max-width: 60%;
+        margin-bottom: 40px;
+        line-height: 64px;
+        font-size: 52px;
+        margin-top: 0px; 
+    }
+    .order{
+        padding: 0 40px;
+        -webkit-text-size-adjust: 100%;
+        display: block;
+        min-width: 1024px;
+        max-width: 1920px;
+        margin: 0 auto;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .wholeorder{
+        margin-top: 130px;
+    }
+    .orderhere{
+        display: flex;
+    }
+    .orderherein{
+        justify-content: left;
+        align-items: flex-start;
+        display: flex;
+    }
+    .address{
+        max-width: 540px;
+        flex-grow:  1;
+        flex-shrink: 1;
+        flex-basis: 0%;
+        position: relative;
+        min-width: 500px; 
+        margin: 0;
+        margin-right: -8px;
+        height: 56px;
+    }
+    .spacemin{
+        width: 8px;
+        height: 1px;
+    }
+    .address1{
+        display: none;
+    }
+    .delivertime{
+        margin: 0;
+        height: 56px;
+        width: 191.23px;
+    }
+    .blacksearch{
+        margin: 0;
+        height: 56px;
+        width: 132.3px;
+        padding: 0;
+    }
+    .address p{
+        font-family: "UberMoveText2";
+        margin-left: 4px;
+    }
+    .uberouter{
+        display: none;
+    }
+    .spacediv{
+        height: 80px;
+    }
+    .spacediv2{
+        display: none;
+    }
+    .advantage{
+        flex-direction: row;
+    }
+    .advantage div{
+        padding-left: 0px;
+        padding-right: 12px;
+        padding-left: 12px;
+        width: 33.3333%;
+    }
+    .spacediv3{
+        display: none;
+    }
+    .address1{
+        display: none;
+    }
+    .advantage{
+        margin: 0;
+        margin-left: -12px;
+        margin-right: 12px;
+    }
+    .advantage div{
+        padding: 0px 12px;
+        margin: 0px 0px 24px;   
+    }
+    .advantage div img{
+        margin: 0px;
+    }
+    .advantage div p{
+        margin-top: 5px;
+        font-size: 28px;
+    }
+    .advantage div a{
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .spacediv{
+        height: 65px;
+    }
+    .
+    .main{
+        
+    }
+}   
